@@ -1,0 +1,9 @@
+{
+    "client_id": "3F3***",
+    "client_secret": "29m***",
+    "access_token": "oeM***",
+    "refresh_token": "h4d***",
+    "start_date": "2000-01-01T00:00:00Z",
+    "api_url": "http://54.174.197.202/AcumaticaSandbox",
+    "expires_in": 1792097236
+}

@@ -1,0 +1,3575 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "vendors",
+      "replication_key": "LastModifiedDateTime",
+      "replication_method": "INCREMENTAL",
+      "key_properties": [
+        "id"
+      ],
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rowNumber": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "AccountRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "APAccount": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "APSubaccount": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Attributes": {
+            "items": {
+              "properties": {
+                "id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "rowNumber": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "AttributeDescription": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "AttributeID": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "RefNoteID": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Required": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "Value": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "ValueDescription": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "custom": {
+                  "properties": {},
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                }
+              },
+              "type": "object"
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "CashAccount": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Contacts": {
+            "items": {
+              "properties": {
+                "id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "rowNumber": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Contact": {
+                  "properties": {
+                    "id": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "rowNumber": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "note": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Active": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "Address": {
+                      "properties": {
+                        "id": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "rowNumber": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ]
+                        },
+                        "note": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "AddressLine1": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "AddressLine2": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "BuildingName": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "BuildingNumber": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "City": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Country": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Department": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "DistrictName": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Floor": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "PostalCode": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "PostBox": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Room": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "State": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "StreetName": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "SubDepartment": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "TownLocationName": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "UnitNumber": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "custom": {
+                          "properties": {},
+                          "type": [
+                            "object",
+                            "null"
+                          ]
+                        }
+                      },
+                      "type": [
+                        "object",
+                        "null"
+                      ]
+                    },
+                    "Attention": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "BusinessAccount": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "CompanyName": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "ContactClass": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "ContactID": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "ContactMethod": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "DateOfBirth": {
+                      "format": "date-time",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "DisplayName": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "DoNotCall": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "DoNotEmail": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "DoNotFax": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "DoNotMail": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "Duplicate": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "DuplicateFound": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "Email": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Fax": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "FaxType": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "FirstName": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Gender": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Image": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "JobTitle": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "LanguageOrLocale": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "LastModifiedDateTime": {
+                      "format": "date-time",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "LastName": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "MaritalStatus": {
+                      "properties": {
+                        "id": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "description": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      },
+                      "type": [
+                        "object",
+                        "null"
+                      ]
+                    },
+                    "MiddleName": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "NoMarketing": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "NoMassMail": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "NoteID": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "OverrideAccountAddress": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "Owner": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "OwnerEmployeeName": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "ParentAccount": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Phone1": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Phone1Type": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Phone2": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Phone2Type": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Phone3": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Phone3Type": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Reason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Source": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "SourceCampaign": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "SpouseOrPartnerName": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Status": {
+                      "properties": {
+                        "id": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "description": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      },
+                      "type": [
+                        "object",
+                        "null"
+                      ]
+                    },
+                    "Synchronize": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "Title": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Type": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "WebSite": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Workgroup": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "WorkgroupDescription": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "custom": {
+                      "properties": {},
+                      "type": [
+                        "object",
+                        "null"
+                      ]
+                    }
+                  },
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                },
+                "ContactID": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "custom": {
+                  "properties": {},
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                },
+                "_links": {
+                  "properties": {},
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "additionalProperties": {
+                    "type": [
+                      "string"
+                    ]
+                  }
+                }
+              },
+              "type": "object"
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "CreatedDateTime": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "CurrencyID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "CurrencyRateType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "EnableCurrencyOverride": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "EnableRateOverride": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "F1099Box": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "F1099Vendor": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "FATCA": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "FOBPoint": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ForeignEntity": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "LandedCostVendor": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "LastModifiedDateTime": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "LeadTimedays": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "LegalName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "LocationName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MainContact": {
+            "properties": {
+              "id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rowNumber": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Active": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Address": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "rowNumber": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "note": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "AddressLine1": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "AddressLine2": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "BuildingName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "BuildingNumber": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "City": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Country": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Department": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "DistrictName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Floor": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "PostalCode": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "PostBox": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Room": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "State": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "StreetName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "SubDepartment": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "TownLocationName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "UnitNumber": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "custom": {
+                    "properties": {},
+                    "type": [
+                      "object",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "Attention": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "BusinessAccount": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "CompanyName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ContactClass": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ContactID": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "ContactMethod": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DateOfBirth": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DisplayName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DoNotCall": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotEmail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotFax": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotMail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Duplicate": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DuplicateFound": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Email": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Fax": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "FaxType": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "FirstName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Gender": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Image": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "JobTitle": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LanguageOrLocale": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LastModifiedDateTime": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LastName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "MaritalStatus": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "MiddleName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "NoMarketing": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "NoMassMail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "NoteID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "OverrideAccountAddress": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Owner": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "OwnerEmployeeName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ParentAccount": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone1": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone1Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone2": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone2Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone3": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone3Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "SourceCampaign": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "SpouseOrPartnerName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Status": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "Synchronize": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "WebSite": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Workgroup": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "WorkgroupDescription": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "custom": {
+                "properties": {},
+                "type": [
+                  "object",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "MaxReceipt": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "MinReceipt": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ParentAccount": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "PaymentBy": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "PaymentInstructions": {
+            "items": {
+              "properties": {
+                "id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "rowNumber": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Description": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "LocationID": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "PaymentInstructionsID": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "PaymentMethod": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Value": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "custom": {
+                  "properties": {},
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                }
+              },
+              "type": "object"
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "PaymentLeadTimedays": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "PaymentMethod": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "PaySeparately": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "PrimaryContact": {
+            "properties": {
+              "id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rowNumber": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Active": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Address": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "rowNumber": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "note": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "AddressLine1": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "AddressLine2": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "BuildingName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "BuildingNumber": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "City": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Country": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Department": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "DistrictName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Floor": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "PostalCode": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "PostBox": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Room": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "State": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "StreetName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "SubDepartment": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "TownLocationName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "UnitNumber": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "custom": {
+                    "properties": {},
+                    "type": [
+                      "object",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "Attention": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "BusinessAccount": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "CompanyName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ContactClass": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ContactID": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "ContactMethod": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DateOfBirth": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DisplayName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DoNotCall": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotEmail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotFax": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotMail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Duplicate": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DuplicateFound": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Email": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Fax": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "FaxType": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "FirstName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Gender": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Image": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "JobTitle": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LanguageOrLocale": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LastModifiedDateTime": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LastName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "MaritalStatus": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "MiddleName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "NoMarketing": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "NoMassMail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "NoteID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "OverrideAccountAddress": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Owner": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "OwnerEmployeeName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ParentAccount": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone1": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone1Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone2": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone2Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone3": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone3Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "SourceCampaign": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "SpouseOrPartnerName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Status": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "Synchronize": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "WebSite": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Workgroup": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "WorkgroupDescription": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "custom": {
+                "properties": {},
+                "type": [
+                  "object",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "PrintOrders": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "ReceiptAction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ReceivingBranch": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "RemittanceAddressOverride": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "RemittanceContact": {
+            "properties": {
+              "id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rowNumber": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Active": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Address": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "rowNumber": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "note": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "AddressLine1": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "AddressLine2": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "BuildingName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "BuildingNumber": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "City": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Country": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Department": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "DistrictName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Floor": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "PostalCode": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "PostBox": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Room": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "State": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "StreetName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "SubDepartment": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "TownLocationName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "UnitNumber": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "custom": {
+                    "properties": {},
+                    "type": [
+                      "object",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "Attention": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "BusinessAccount": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "CompanyName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ContactClass": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ContactID": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "ContactMethod": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DateOfBirth": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DisplayName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DoNotCall": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotEmail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotFax": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotMail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Duplicate": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DuplicateFound": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Email": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Fax": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "FaxType": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "FirstName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Gender": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Image": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "JobTitle": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LanguageOrLocale": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LastModifiedDateTime": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LastName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "MaritalStatus": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "MiddleName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "NoMarketing": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "NoMassMail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "NoteID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "OverrideAccountAddress": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Owner": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "OwnerEmployeeName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ParentAccount": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone1": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone1Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone2": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone2Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone3": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone3Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "SourceCampaign": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "SpouseOrPartnerName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Status": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "Synchronize": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "WebSite": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Workgroup": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "WorkgroupDescription": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "custom": {
+                "properties": {},
+                "type": [
+                  "object",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "RemittanceContactOverride": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "SendOrdersbyEmail": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "ShippingAddressOverride": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "ShippingContact": {
+            "properties": {
+              "id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rowNumber": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Active": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Address": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "rowNumber": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "note": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "AddressLine1": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "AddressLine2": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "BuildingName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "BuildingNumber": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "City": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Country": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Department": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "DistrictName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Floor": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "PostalCode": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "PostBox": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Room": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "State": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "StreetName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "SubDepartment": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "TownLocationName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "UnitNumber": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "custom": {
+                    "properties": {},
+                    "type": [
+                      "object",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "Attention": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "BusinessAccount": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "CompanyName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ContactClass": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ContactID": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "ContactMethod": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DateOfBirth": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DisplayName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DoNotCall": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotEmail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotFax": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "DoNotMail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Duplicate": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "DuplicateFound": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Email": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Fax": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "FaxType": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "FirstName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Gender": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Image": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "JobTitle": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LanguageOrLocale": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LastModifiedDateTime": {
+                "format": "date-time",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "LastName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "MaritalStatus": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "MiddleName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "NoMarketing": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "NoMassMail": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "NoteID": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "OverrideAccountAddress": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Owner": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "OwnerEmployeeName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ParentAccount": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone1": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone1Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone2": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone2Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone3": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Phone3Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "SourceCampaign": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "SpouseOrPartnerName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Status": {
+                "properties": {
+                  "id": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "Synchronize": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "Title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "WebSite": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Workgroup": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "WorkgroupDescription": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "custom": {
+                "properties": {},
+                "type": [
+                  "object",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "ShippingContactOverride": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "ShippingTerms": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ShipVia": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Status": {
+            "properties": {
+              "id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "TaxRegistrationID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TaxZone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Terms": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ThresholdReceipt": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "VendorClass": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "VendorID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "VendorIsTaxAgency": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "VendorName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Warehouse": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "custom": {
+            "properties": {},
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "vendors",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "rowNumber"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "note"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "AccountRef"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "APAccount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "APSubaccount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Attributes"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CashAccount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Contacts"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CreatedDateTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CurrencyID"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CurrencyRateType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "EnableCurrencyOverride"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "EnableRateOverride"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "F1099Box"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "F1099Vendor"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "FATCA"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "FOBPoint"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ForeignEntity"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LandedCostVendor"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LastModifiedDateTime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LeadTimedays"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LegalName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LocationName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MainContact"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MaxReceipt"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MinReceipt"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ParentAccount"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PaymentBy"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PaymentInstructions"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PaymentLeadTimedays"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PaymentMethod"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PaySeparately"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PrimaryContact"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PrintOrders"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ReceiptAction"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ReceivingBranch"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "RemittanceAddressOverride"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "RemittanceContact"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "RemittanceContactOverride"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SendOrdersbyEmail"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ShippingAddressOverride"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ShippingContact"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ShippingContactOverride"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ShippingTerms"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ShipVia"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Status"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TaxRegistrationID"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TaxZone"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Terms"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ThresholdReceipt"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "VendorClass"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "VendorID"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "VendorIsTaxAgency"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "VendorName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Warehouse"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "custom"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "table-key-properties": [
+              "id"
+            ],
+            "valid-replication-keys": [
+              "LastModifiedDateTime"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
