@@ -153,13 +153,18 @@ class CompaniesStream(AcumaticaStream):
     ).to_dict()
 
     @override
+    def __init__(self, tap: Any, schema: Any = None, name: str | None = None) -> None:
+        """Track company ids so branch rows collapse to one record."""
+        super().__init__(tap, schema, name)
+        self._seen_ids: set[str] = set()
+
+    @override
     def prepare_request_payload(
         self,
         context: dict | None,
         next_page_token: Any | None,
     ) -> dict:
         """Send an empty inquiry body so Acumatica returns company branches."""
-        self._seen_ids: set[str] = set()
         return {}
 
     @override
