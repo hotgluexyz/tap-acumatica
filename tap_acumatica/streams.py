@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, ClassVar
 
 import requests
 from hotglue_singer_sdk import typing as th  # JSON Schema typing helpers
@@ -140,7 +140,7 @@ class CompaniesStream(AcumaticaStream):
     path = "/CompaniesStructure"
     rest_method = "PUT"
     records_jsonpath = "$.Results[*]"
-    primary_keys = ["id"]
+    primary_keys: ClassVar[list[str]] = ["id"]
     replication_key = None
     expand = "Results"
     schema = th.PropertiesList(
@@ -190,7 +190,7 @@ class CompaniesStream(AcumaticaStream):
         previous_token: Any | None,
     ) -> None:
         """The inquiry returns every company branch in one response."""
-        return None
+        return
 
 
 class AccountsStream(AcumaticaStream):
@@ -198,7 +198,7 @@ class AccountsStream(AcumaticaStream):
 
     name = "accounts"
     path = "/Account"
-    primary_keys = ["id"]
+    primary_keys: ClassVar[list[str]] = ["id"]
     replication_key = "LastModifiedDateTime"
     schema = th.PropertiesList(
         th.Property("id", th.StringType),
@@ -232,7 +232,7 @@ class VendorsStream(AcumaticaStream):
 
     name = "vendors"
     path = "/Vendor"
-    primary_keys = ["id"]
+    primary_keys: ClassVar[list[str]] = ["id"]
     replication_key = "LastModifiedDateTime"
     expand = (
         "Attributes,"
@@ -302,4 +302,3 @@ class VendorsStream(AcumaticaStream):
         th.Property("Warehouse", th.StringType),
         th.Property("custom", th.ObjectType()),
     ).to_dict()
-
