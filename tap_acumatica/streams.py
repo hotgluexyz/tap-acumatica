@@ -240,6 +240,29 @@ class BranchesStream(AcumaticaStream):
         return
 
 
+class CurrenciesStream(AcumaticaStream):
+    """Stream for ``currencies``."""
+
+    name = "currencies"
+    path = "/Currency"
+    primary_keys: ClassVar[list[str]] = ["id"]
+    replication_key = "LastModifiedDateTime"
+    schema = th.PropertiesList(
+        th.Property("id", th.StringType),
+        th.Property("rowNumber", th.IntegerType),
+        th.Property("note", th.StringType),
+        th.Property("Active", th.BooleanType),
+        th.Property("CreatedDateTime", th.DateTimeType),
+        th.Property("CurrencyID", th.StringType),
+        th.Property("CurrencySymbol", th.StringType),
+        th.Property("DecimalPrecision", th.IntegerType),
+        th.Property("Description", th.StringType),
+        th.Property("LastModifiedDateTime", th.DateTimeType),
+        th.Property("UseForAccounting", th.BooleanType),
+        th.Property("custom", th.ObjectType()),
+    ).to_dict()
+
+
 class AccountsStream(AcumaticaStream):
     """Stream for ``accounts``."""
 

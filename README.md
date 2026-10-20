@@ -8,7 +8,7 @@ A [Singer](https://www.singer.io/) tap that extracts data from **Acumatica**. It
 - **OAuth2** with access token support via Hotglue (`access_token_support` on the tap).
 
 - Required **`api_url`** and optional **`start_date`** (see [Configuration](#configuration)).
-- Account and vendor syncs use the entity GUID **`id`** as the primary key and **`LastModifiedDateTime`** as the replication key.
+- Account, currency, and vendor syncs use the entity GUID **`id`** as the primary key and **`LastModifiedDateTime`** as the replication key.
 
 ### Streams
 
@@ -17,9 +17,10 @@ A [Singer](https://www.singer.io/) tap that extracts data from **Acumatica**. It
 | `accounts` | `GET` `{api_url}/entity/Default/{version}/Account` | `id` | `LastModifiedDateTime` |
 | `branches` | `PUT` `{api_url}/entity/Default/{version}/CompaniesStructure` | `BranchID` | — |
 | `companies` | `PUT` `{api_url}/entity/Default/{version}/CompaniesStructure` | `id` | — |
+| `currencies` | `GET` `{api_url}/entity/Default/{version}/Currency` | `id` | `LastModifiedDateTime` |
 | `vendors` | `GET` `{api_url}/entity/Default/{version}/Vendor` | `id` | `LastModifiedDateTime` |
 
-Account and vendor records are paged with `$top` and `$skip` (100 per page). Incremental syncs send `$filter=LastModifiedDateTime ge {bookmark}`. Field values are unwrapped from Acumatica's `{"value": ...}` objects before they are emitted. Vendor requests expand attributes, contacts and their addresses, the main, primary, remittance, and shipping contacts and their addresses, and payment instructions. Account has no linked records to expand. Companies and branches both come from the Company Branch inquiry: one `PUT` with `Results` expanded returns every branch. Companies keeps one record per company `id` and the company fields only. Branches keeps every row and uses `BranchID` as the primary key, because the inquiry `id` is the company GUID and repeats for each branch of that company. That screen has no replication field.
+Account, currency, and vendor records are paged with `$top` and `$skip` (100 per page). Incremental syncs send `$filter=LastModifiedDateTime ge {bookmark}`. Field values are unwrapped from Acumatica's `{"value": ...}` objects before they are emitted. Vendor requests expand attributes, contacts and their addresses, the main, primary, remittance, and shipping contacts and their addresses, and payment instructions. Account and currency have no linked records to expand. Companies and branches both come from the Company Branch inquiry: one `PUT` with `Results` expanded returns every branch. Companies keeps one record per company `id` and the company fields only. Branches keeps every row and uses `BranchID` as the primary key, because the inquiry `id` is the company GUID and repeats for each branch of that company. That screen has no replication field.
 
 ## Requirements
 

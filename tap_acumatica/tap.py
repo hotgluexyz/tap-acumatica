@@ -16,6 +16,7 @@ from tap_acumatica.streams import (
     AccountsStream,
     BranchesStream,
     CompaniesStream,
+    CurrenciesStream,
     VendorsStream,
 )
 
@@ -23,6 +24,7 @@ STREAM_TYPES = [
     AccountsStream,
     BranchesStream,
     CompaniesStream,
+    CurrenciesStream,
     VendorsStream,
 ]
 
