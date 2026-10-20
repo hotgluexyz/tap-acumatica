@@ -198,6 +198,48 @@ class CompaniesStream(AcumaticaStream):
         return
 
 
+class BranchesStream(AcumaticaStream):
+    """Stream for ``branches``."""
+
+    name = "branches"
+    path = "/CompaniesStructure"
+    rest_method = "PUT"
+    records_jsonpath = "$.Results[*]"
+    primary_keys: ClassVar[list[str]] = ["BranchID"]
+    replication_key = None
+    expand = "Results"
+    schema = th.PropertiesList(
+        th.Property("id", th.StringType),
+        th.Property("BaseCurrencyID", th.StringType),
+        th.Property("BranchID", th.StringType),
+        th.Property("BranchName", th.StringType),
+        th.Property("BranchCountry", th.StringType),
+        th.Property("BranchStatus", th.BooleanType),
+        th.Property("CompanyID", th.StringType),
+        th.Property("CompanyName", th.StringType),
+        th.Property("CompanyStatus", th.BooleanType),
+        th.Property("CompanyType", th.StringType),
+    ).to_dict()
+
+    @override
+    def prepare_request_payload(
+        self,
+        context: dict | None,
+        next_page_token: Any | None,
+    ) -> dict:
+        """Send an empty inquiry body so Acumatica returns company branches."""
+        return {}
+
+    @override
+    def get_next_page_token(
+        self,
+        response: requests.Response,
+        previous_token: Any | None,
+    ) -> None:
+        """The inquiry returns every company branch in one response."""
+        return
+
+
 class AccountsStream(AcumaticaStream):
     """Stream for ``accounts``."""
 

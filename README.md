@@ -15,10 +15,11 @@ A [Singer](https://www.singer.io/) tap that extracts data from **Acumatica**. It
 | Stream | Endpoint / notes | Primary key | Replication key |
 | ------ | ---------------- | ----------- | ----------------- |
 | `accounts` | `GET` `{api_url}/entity/Default/{version}/Account` | `id` | `LastModifiedDateTime` |
+| `branches` | `PUT` `{api_url}/entity/Default/{version}/CompaniesStructure` | `BranchID` | — |
 | `companies` | `PUT` `{api_url}/entity/Default/{version}/CompaniesStructure` | `id` | — |
 | `vendors` | `GET` `{api_url}/entity/Default/{version}/Vendor` | `id` | `LastModifiedDateTime` |
 
-Account and vendor records are paged with `$top` and `$skip` (100 per page). Incremental syncs send `$filter=LastModifiedDateTime ge {bookmark}`. Field values are unwrapped from Acumatica's `{"value": ...}` objects before they are emitted. Vendor requests expand attributes, contacts and their addresses, the main, primary, remittance, and shipping contacts and their addresses, and payment instructions. Account has no linked records to expand. Companies come from the Company Branch inquiry: one `PUT` with `Results` expanded returns every branch, and the stream keeps one record per company `id` with the company fields only. That screen has no replication field.
+Account and vendor records are paged with `$top` and `$skip` (100 per page). Incremental syncs send `$filter=LastModifiedDateTime ge {bookmark}`. Field values are unwrapped from Acumatica's `{"value": ...}` objects before they are emitted. Vendor requests expand attributes, contacts and their addresses, the main, primary, remittance, and shipping contacts and their addresses, and payment instructions. Account has no linked records to expand. Companies and branches both come from the Company Branch inquiry: one `PUT` with `Results` expanded returns every branch. Companies keeps one record per company `id` and the company fields only. Branches keeps every row and uses `BranchID` as the primary key, because the inquiry `id` is the company GUID and repeats for each branch of that company. That screen has no replication field.
 
 ## Requirements
 
