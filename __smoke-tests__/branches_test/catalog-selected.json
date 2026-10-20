@@ -1,0 +1,179 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "branches",
+      "replication_method": "FULL_TABLE",
+      "key_properties": [
+        "BranchID"
+      ],
+      "schema": {
+        "properties": {
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BaseCurrencyID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BranchID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BranchName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BranchCountry": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BranchStatus": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "CompanyID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "CompanyName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "CompanyStatus": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "CompanyType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "branches",
+      "metadata": [
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BaseCurrencyID"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BranchID"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BranchName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BranchCountry"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BranchStatus"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CompanyID"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CompanyName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CompanyStatus"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CompanyType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "table-key-properties": [
+              "BranchID"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
