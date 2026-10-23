@@ -1,0 +1,174 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: http://54.174.197.202/AcumaticaSandbox/entity
+  response:
+    body:
+      string: '{"version": {"acumaticaBuildVersion": "26.200.0334", "databaseVersion":
+        "26.200.0334"}, "endpoints": [{"name": "Default", "version": "20.200.001",
+        "href": "-Fallback-scrubbed-xkypgSMXkpSHwXZfMifWuFddZOXyxjsmGzDwnUUQFLbt"},
+        {"name": "eCommerce", "version": "20.200.001", "href": "-Fallback-scrubbed-fIIwTShepNlEozwAdtuULojUFoEZLctgKHaffVXQzemkts"},
+        {"name": "Default", "version": "22.200.001", "href": "-Fallback-scrubbed-eHZfUsFcOllvYELJfSKRzEiIXGCqpBecuarlEDNaYyVL"},
+        {"name": "eCommerce", "version": "22.200.001", "href": "-Fallback-scrubbed-rgHRpUNiKNiHZzbFEAorkVQZUJgFjsBsLhMRjgZHiJBwXE"},
+        {"name": "GLConsolidation", "version": "22.200.001", "href": "-Fallback-scrubbed-UFfkdMYTFpKFaQRpLnrBvEdCKagwgYcDFvQpoImjFGjgoewJWAIR"},
+        {"name": "Default", "version": "23.200.001", "href": "-Fallback-scrubbed-FNoJQfWhXuxohxSeJnToSWReyKRktDnGBXSTmgqYWZQc"},
+        {"name": "DeviceHub", "version": "23.200.001", "href": "-Fallback-scrubbed-wXhhhjeeyeMkUPpOziicfdMtEcUpDXTGjCpjBmqTFhxyXL"},
+        {"name": "eCommerce", "version": "23.200.001", "href": "-Fallback-scrubbed-thzjjTLJSYQkqbaoipDEEdofplYaftORwIgAzJHrffMeHd"},
+        {"name": "MANUFACTURING", "version": "23.200.001", "href": "-Fallback-scrubbed-vmyUbsWoYnoazbrPTJNArKdtXeExnqgLbVzzhmQLoxSmVLUHTN"},
+        {"name": "Default", "version": "24.200.001", "href": "-Fallback-scrubbed-TSPgWCXbdkZSLmlDXoVZBjpaKIOiBTiACzaRfCLrYjOH"},
+        {"name": "eCommerce", "version": "24.200.001", "href": "-Fallback-scrubbed-AVVqAHToJaEilzFbAcdiyevxlHpxKaggoQyruKVAwmBZeW"},
+        {"name": "MANUFACTURING", "version": "24.200.001", "href": "-Fallback-scrubbed-tLvDnwWqHWEBvlhCsrTupmLOJPzMibXANkzClxxzvWGqsiOZDd"},
+        {"name": "MANUFACTURING", "version": "25.100.001", "href": "-Fallback-scrubbed-jWrEchPbcLwSIEWJmMPcOevPZflolieoeSxzltqaqlYMgBLLgZ"},
+        {"name": "Default", "version": "25.200.001", "href": "-Fallback-scrubbed-MpuxtSCZCsAHQSlHTbiTbpafybTfrBhBCfpzevJzqeIu"},
+        {"name": "DeviceHub", "version": "26.100.001", "href": "-Fallback-scrubbed-hiDlEODxQWCpIqGSHEbVKIOeWqUnWGJZXmjRjGudSJOZAf"},
+        {"name": "AIAutomationInternal", "version": "26.200.001", "href": "-Fallback-scrubbed-EaGiUlPCfiKJtWPZSJoZBxkUeMratHHmgPithuWPxJZznMmUfQictYDOl"},
+        {"name": "Default", "version": "26.200.001", "href": "-Fallback-scrubbed-otULxPoXGxTgesysqgkgxJlgaGtARlTDhaDvyWCJyQVe"},
+        {"name": "eCommerce", "version": "26.200.001", "href": "-Fallback-scrubbed-HIGlvnixEtHiRLjJSdzZUnrECOZMZqUelWllmgDMpKRmKx"},
+        {"name": "MANUFACTURING", "version": "26.200.001", "href": "-Fallback-scrubbed-CGmVjNAcfGjjjsmjYbNevDtPkdFpbkvJHYrWuuXKZXTmOLBzMz"}]}'
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 15 Oct 2026 19:44:00 GMT
+      Vary:
+      - Accept-Encoding
+      X-Robots-Tag:
+      - noindex
+      content-length:
+      - '2039'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: grant_type=refresh_token
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '184'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: http://54.174.197.202/AcumaticaSandbox/identity/connect/token
+  response:
+    body:
+      string: '{"access_token": "30D***", "expires_in": 3600, "token_type": "-Fallback-scrubbed-yIjGDs",
+        "refresh_token": "JhE***", "scope": "-Fallback-scrubbed-WSRUctXdtWFQGoeQcU"}'
+    headers:
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 15 Oct 2026 19:44:02 GMT
+      Expires:
+      - '-1'
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Robots-Tag:
+      - noindex
+      content-length:
+      - '193'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+    method: PUT
+    uri: http://54.174.197.202/AcumaticaSandbox/entity/Default/26.200.001/CompaniesStructure?%24top=100&%24skip=0&%24expand=Results
+  response:
+    body:
+      string: '{"id": "-Fallback-scrubbed-FjfDZJFtlMNfaKMpCAooLYIbxXwzZIegwulJ", "rowNumber":
+        7914, "note": null, "Results": [{"id": "-Fallback-scrubbed-xtoyqkXkyoHLujsZuEhctEyrZCbtXdPQmEzP",
+        "rowNumber": 7914, "note": {"value": ""}, "BaseCurrencyID": {"value": "-Fallback-scrubbed-HUt"},
+        "BranchCountry": {"value": "-Fallback-scrubbed-SS"}, "BranchID": {"value":
+        "-Fallback-scrubbed-vIRNTDzUd"}, "BranchName": {"value": "-Fallback-scrubbed-kxiprfcWINsoAcLYoj"},
+        "BranchStatus": {"value": false}, "CompanyID": {"value": "-Fallback-scrubbed-WXKszQIt"},
+        "CompanyName": {"value": "-Fallback-scrubbed-uMZmxxFMWXHxdpvLWDRFX"}, "CompanyStatus":
+        {"value": false}, "CompanyType": {"value": "-Fallback-scrubbed-GpigUhfYyMzUbJAYCuelKIRbvnnNicccP"},
+        "custom": {}, "_links": {"files:put": "-Fallback-scrubbed-gnFPYbDzbhieiPVKBojFxhsWSawsxUeUcEGDWVLHxUhfUfhsozrGeeSObbUhKrVoKweCLFIbGsBcgtKqHvBsFeQJBHIvhTUEMDmcRVfRhwTfzEOrSpMcHuJqSwdLqRYHWD"}},
+        {"id": "-Fallback-scrubbed-xtoyqkXkyoHLujsZuEhctEyrZCbtXdPQmEzP", "rowNumber":
+        2150, "note": {"value": ""}, "BaseCurrencyID": {"value": "-Fallback-scrubbed-HUt"},
+        "BranchCountry": {"value": "-Fallback-scrubbed-SS"}, "BranchID": {"value":
+        "-Fallback-scrubbed-iHNOgfPegv"}, "BranchName": {"value": "-Fallback-scrubbed-nmrTnuBImybnXUC"},
+        "BranchStatus": {"value": false}, "CompanyID": {"value": "-Fallback-scrubbed-WXKszQIt"},
+        "CompanyName": {"value": "-Fallback-scrubbed-uMZmxxFMWXHxdpvLWDRFX"}, "CompanyStatus":
+        {"value": false}, "CompanyType": {"value": "-Fallback-scrubbed-GpigUhfYyMzUbJAYCuelKIRbvnnNicccP"},
+        "custom": {}, "_links": {"files:put": "-Fallback-scrubbed-gnFPYbDzbhieiPVKBojFxhsWSawsxUeUcEGDWVLHxUhfUfhsozrGeeSObbUhKrVoKweCLFIbGsBcgtKqHvBsFeQJBHIvhTUEMDmcRVfRhwTfzEOrSpMcHuJqSwdLqRYHWD"}},
+        {"id": "-Fallback-scrubbed-ZzxXuQXFLVmfbDOhJlVcXFrUEYgZthzyZKZI", "rowNumber":
+        5847, "note": {"value": ""}, "BaseCurrencyID": {"value": "-Fallback-scrubbed-HUt"},
+        "BranchCountry": {"value": "-Fallback-scrubbed-SS"}, "BranchID": {"value":
+        "-Fallback-scrubbed-atnEkUXG"}, "BranchName": {"value": "-Fallback-scrubbed-ECOscOvAXvLNJ"},
+        "BranchStatus": {"value": false}, "CompanyID": {"value": "-Fallback-scrubbed-MWGxjCbo"},
+        "CompanyName": {"value": "-Fallback-scrubbed-dUnMCwbAFjHAvHrblcWNd"}, "CompanyStatus":
+        {"value": false}, "CompanyType": {"value": "-Fallback-scrubbed-qHTepQmeWUIFIseGHJJczwctxElQJYlZDJcUu"},
+        "custom": {}, "_links": {"files:put": "-Fallback-scrubbed-cemBuBtoWLxrOuKBDShebOxlfFOALdiUMaJIVUbqKAgMkZDjffYMYzIUZGiJGPkAHGLACnVNLsjlgLQAQWxbLqumHwqPjGoIdXYtfYwsKoqBBtTFiyihOytdcnVRTolzwd"}},
+        {"id": "-Fallback-scrubbed-ZzxXuQXFLVmfbDOhJlVcXFrUEYgZthzyZKZI", "rowNumber":
+        3257, "note": {"value": ""}, "BaseCurrencyID": {"value": "-Fallback-scrubbed-HUt"},
+        "BranchCountry": {"value": "-Fallback-scrubbed-SS"}, "BranchID": {"value":
+        "-Fallback-scrubbed-dJuBTwDd"}, "BranchName": {"value": "-Fallback-scrubbed-HXTZUhUGlRAZI"},
+        "BranchStatus": {"value": false}, "CompanyID": {"value": "-Fallback-scrubbed-MWGxjCbo"},
+        "CompanyName": {"value": "-Fallback-scrubbed-dUnMCwbAFjHAvHrblcWNd"}, "CompanyStatus":
+        {"value": false}, "CompanyType": {"value": "-Fallback-scrubbed-qHTepQmeWUIFIseGHJJczwctxElQJYlZDJcUu"},
+        "custom": {}, "_links": {"files:put": "-Fallback-scrubbed-cemBuBtoWLxrOuKBDShebOxlfFOALdiUMaJIVUbqKAgMkZDjffYMYzIUZGiJGPkAHGLACnVNLsjlgLQAQWxbLqumHwqPjGoIdXYtfYwsKoqBBtTFiyihOytdcnVRTolzwd"}},
+        {"id": "-Fallback-scrubbed-iivQAxizABCAMOgtBIAfcrUOvafYLqFqHaWW", "rowNumber":
+        8244, "note": {"value": ""}, "BaseCurrencyID": {"value": "-Fallback-scrubbed-HUt"},
+        "BranchCountry": {"value": "-Fallback-scrubbed-SS"}, "BranchID": {"value":
+        "-Fallback-scrubbed-KLtwAei"}, "BranchName": {"value": "-Fallback-scrubbed-LYnqYgejGuDUukhhtIME"},
+        "BranchStatus": {"value": false}, "CompanyID": {"value": "-Fallback-scrubbed-KLtwAei"},
+        "CompanyName": {"value": "-Fallback-scrubbed-LYnqYgejGuDUukhhtIME"}, "CompanyStatus":
+        {"value": false}, "CompanyType": {"value": "-Fallback-scrubbed-FclnqqvgiXDdQWJI"},
+        "custom": {}, "_links": {"files:put": "-Fallback-scrubbed-OmgslxavHSROmKLCHvxbqRGhMiZwbQGFkTWnFQppIrGuhUuahZGDdQUVADooPLGoDeTSyhsDWlHJFLsdBFQvYGuGOmNhHBlonhYWpGUCKKRxatKbtNIUJqQFlHxzrsYGaN"}}],
+        "custom": {}}'
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 15 Oct 2026 19:44:04 GMT
+      SessionId:
+      - 432197ca-5fe6-4494-8b1f-4203a0d0f3c7
+      Vary:
+      - Accept-Encoding
+      X-Robots-Tag:
+      - noindex
+      content-length:
+      - '3025'
+    status:
+      code: 200
+      message: OK
+version: 1

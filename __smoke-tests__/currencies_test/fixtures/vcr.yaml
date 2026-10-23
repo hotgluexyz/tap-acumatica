@@ -1,0 +1,159 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: http://54.174.197.202/AcumaticaSandbox/entity
+  response:
+    body:
+      string: '{"version": {"acumaticaBuildVersion": "26.200.0334", "databaseVersion":
+        "26.200.0334"}, "endpoints": [{"name": "Default", "version": "20.200.001",
+        "href": "-Fallback-scrubbed-XdMhLiVxQZBCtuXgBYnLTFVHwVLuZXYOqWJkcNdAAYio"},
+        {"name": "eCommerce", "version": "20.200.001", "href": "-Fallback-scrubbed-eUzmTnrZDBWCtxweIJrJcEirwzCsVkSyrfjMWMzjbFwqqD"},
+        {"name": "Default", "version": "22.200.001", "href": "-Fallback-scrubbed-KMoVDoJmNgjTxQxfWhAgQdtOFEaMDkVlyNBhZIyMNwFs"},
+        {"name": "eCommerce", "version": "22.200.001", "href": "-Fallback-scrubbed-sKflrLorONZKXuOjkgcQNAGZIOjCALDmqifUWdyAfWSKnd"},
+        {"name": "GLConsolidation", "version": "22.200.001", "href": "-Fallback-scrubbed-ajPlvkXtmxUPgrVuSiPbJcySXIZIVHXuIQUIYVSNRipmHMwxUaVl"},
+        {"name": "Default", "version": "23.200.001", "href": "-Fallback-scrubbed-xNbbpgRPgZSuuhxvwUnhHDglxYhlqFgTbKljLaIHJfWy"},
+        {"name": "DeviceHub", "version": "23.200.001", "href": "-Fallback-scrubbed-EFFRjVOQCREaAIHjmqFXIfEbLoFfKnSQbmpYuwwZINmhWd"},
+        {"name": "eCommerce", "version": "23.200.001", "href": "-Fallback-scrubbed-CQcfUTOEZKxSAVLCGWbOfcJVlHxPTjCWSYqaFeuJPEFZEx"},
+        {"name": "MANUFACTURING", "version": "23.200.001", "href": "-Fallback-scrubbed-rkRpYUbyaeKQyhgYXVFqTYJfxllSiRktDQYIHWDWgmFSwbonXf"},
+        {"name": "Default", "version": "24.200.001", "href": "-Fallback-scrubbed-TRJlEvnhFcsPApEeptBWeUawldbItsvzYRuyMOGABJNy"},
+        {"name": "eCommerce", "version": "24.200.001", "href": "-Fallback-scrubbed-NluqYvaazLVMCJSIpOIkkbxDBsCXKWcIxfdYGwMQHBQslw"},
+        {"name": "MANUFACTURING", "version": "24.200.001", "href": "-Fallback-scrubbed-oBToubuNLnSvwzOSkYFayZFJNziCEjByxIdOsxtPimnHQWWtMw"},
+        {"name": "MANUFACTURING", "version": "25.100.001", "href": "-Fallback-scrubbed-hDUXNiYBqTsxpPFfgJEsXFHBBlQLzrPMhgguhYFRpXUyaNWjek"},
+        {"name": "Default", "version": "25.200.001", "href": "-Fallback-scrubbed-YPGUGGCKBqNtRYSubyeeexteKHwPudbECdWJDHtRSXjb"},
+        {"name": "DeviceHub", "version": "26.100.001", "href": "-Fallback-scrubbed-fIQHauJzrdVBpLjLTHmTaRVjAmFjNKSSYYmoYZvmicPjkP"},
+        {"name": "AIAutomationInternal", "version": "26.200.001", "href": "-Fallback-scrubbed-SmKounHXSwMgdAowdlxnzJjFUKPCJZfCEIHqAmlxlfZxdfIXLAdNDZutT"},
+        {"name": "Default", "version": "26.200.001", "href": "-Fallback-scrubbed-zJidxobELqBCBOITtpSViyBUwdpQteGEtPfxkTcApCtI"},
+        {"name": "eCommerce", "version": "26.200.001", "href": "-Fallback-scrubbed-qbhBnmhKeplKPfgobmLtATXzEWlKswgKniATGShrlzYwZx"},
+        {"name": "MANUFACTURING", "version": "26.200.001", "href": "-Fallback-scrubbed-EDswyPOgUCVRwqYWfxEDsjdBADgElgWWcjGyGIcRltenInxyiu"}]}'
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 20 Oct 2026 19:39:06 GMT
+      Vary:
+      - Accept-Encoding
+      X-Robots-Tag:
+      - noindex
+      content-length:
+      - '2039'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: grant_type=refresh_token
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '184'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.34.2
+    method: POST
+    uri: http://54.174.197.202/AcumaticaSandbox/identity/connect/token
+  response:
+    body:
+      string: '{"access_token": "mil***", "expires_in": 3600, "token_type": "-Fallback-scrubbed-QitxJe",
+        "refresh_token": "vgy***", "scope": "-Fallback-scrubbed-CGPdIbvKFrtHZiTSOH"}'
+    headers:
+      Cache-Control:
+      - no-cache, no-store
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 20 Oct 2026 19:39:06 GMT
+      Expires:
+      - '-1'
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Robots-Tag:
+      - noindex
+      content-length:
+      - '193'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.34.2
+    method: GET
+    uri: http://54.174.197.202/AcumaticaSandbox/entity/Default/26.200.001/Currency?%24top=100&%24skip=0&%24filter=LastModifiedDateTime+ge+2000-01-01T00%3A00%3A00%2B00%3A00
+  response:
+    body:
+      string: '[{"id": "-Fallback-scrubbed-SeeIwPYghcpUVhxbmDnMSBmYqgSFuWUkHsrY",
+        "rowNumber": 5199, "note": null, "Active": {"value": true}, "CreatedDateTime":
+        {"value": "1981-02-04T23:40:39+00:00"}, "CurrencyID": {"value": "-Fallback-scrubbed-qeE"},
+        "CurrencySymbol": {"value": "-Fallback-scrubbed-vz"}, "DecimalPrecision":
+        {"value": 3055}, "Description": {"value": "-Fallback-scrubbed-meZjlvkhULVPJqww"},
+        "LastModifiedDateTime": {"value": "1981-02-04T23:40:39+00:00"}, "UseForAccounting":
+        {"value": true}, "custom": {}}, {"id": "-Fallback-scrubbed-kCzjKhcGuSxvdXhVETnJuRvBrLBLguLGkHTB",
+        "rowNumber": 3055, "note": null, "Active": {"value": true}, "CreatedDateTime":
+        {"value": "1981-02-04T23:40:39+00:00"}, "CurrencyID": {"value": "-Fallback-scrubbed-rkV"},
+        "CurrencySymbol": {"value": "-Fallback-scrubbed-s"}, "DecimalPrecision": {"value":
+        3055}, "Description": {"value": "-Fallback-scrubbed-jVDE"}, "LastModifiedDateTime":
+        {"value": "1981-02-04T23:40:39+00:00"}, "UseForAccounting": {"value": true},
+        "custom": {}}, {"id": "-Fallback-scrubbed-UwLQngvypNRaPUrgCikaboBiaxdEqgmufkpY",
+        "rowNumber": 1199, "note": null, "Active": {"value": true}, "CreatedDateTime":
+        {"value": "1981-02-04T23:40:39+00:00"}, "CurrencyID": {"value": "-Fallback-scrubbed-hyM"},
+        "CurrencySymbol": {"value": "-Fallback-scrubbed-f"}, "DecimalPrecision": {"value":
+        3055}, "Description": {"value": "-Fallback-scrubbed-LlsTctUHKkNXO"}, "LastModifiedDateTime":
+        {"value": "1981-02-04T23:40:39+00:00"}, "UseForAccounting": {"value": true},
+        "custom": {}}, {"id": "-Fallback-scrubbed-pFoFIccXbJPCCpwdVVQBSEqIHkLenbQkEqqx",
+        "rowNumber": 3822, "note": null, "Active": {"value": true}, "CreatedDateTime":
+        {"value": "1981-02-04T23:40:39+00:00"}, "CurrencyID": {"value": "-Fallback-scrubbed-oyA"},
+        "CurrencySymbol": {"value": "-Fallback-scrubbed-sF"}, "DecimalPrecision":
+        {"value": 3055}, "Description": {"value": "-Fallback-scrubbed-yxtyHmNkNvZhHrUg"},
+        "LastModifiedDateTime": {"value": "1981-02-04T23:40:39+00:00"}, "UseForAccounting":
+        {"value": true}, "custom": {}}, {"id": "-Fallback-scrubbed-saQnbXXRCXLeWWLPXvQReIGNWMkvYjThMXHP",
+        "rowNumber": 9032, "note": null, "Active": {"value": true}, "CreatedDateTime":
+        {"value": "1981-02-04T23:40:39+00:00"}, "CurrencyID": {"value": "-Fallback-scrubbed-GTJ"},
+        "CurrencySymbol": {"value": "-Fallback-scrubbed-N"}, "DecimalPrecision": {"value":
+        3055}, "Description": {"value": "-Fallback-scrubbed-wRfGYtJNzVoG"}, "LastModifiedDateTime":
+        {"value": "1981-02-04T23:40:39+00:00"}, "UseForAccounting": {"value": true},
+        "custom": {}}]'
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 20 Oct 2026 19:39:08 GMT
+      SessionId:
+      - a09cedc9-2c3b-4bc9-8564-8b33adbdabbc
+      Vary:
+      - Accept-Encoding
+      X-Robots-Tag:
+      - noindex
+      content-length:
+      - '1952'
+    status:
+      code: 200
+      message: OK
+version: 1
